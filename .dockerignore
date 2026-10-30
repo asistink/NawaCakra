@@ -8,3 +8,5 @@ docker-compose.yml
 docs
 README.md
 eslint.config.mjs
+tsconfig.tsbuildinfo
+.env*

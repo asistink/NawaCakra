@@ -46,11 +46,12 @@ describe("Sponsors", () => {
     ).toBeInTheDocument();
   });
 
-  it("menampilkan 3 tier paket sponsor beserta nominal", () => {
+  it("menampilkan 4 tier paket sponsor beserta nominal dan kuota", () => {
     render(<Sponsors />);
     for (const t of sponsorTiers) {
       expect(screen.getByText(t.tier)).toBeInTheDocument();
       expect(screen.getByText(t.amount)).toBeInTheDocument();
+      expect(screen.getAllByText(`Kuota ${t.quota} slot`).length).toBeGreaterThan(0);
     }
   });
 

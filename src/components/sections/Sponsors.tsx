@@ -20,7 +20,7 @@ export default function Sponsors() {
           </p>
         </Reveal>
 
-        <div className="mt-16 grid gap-8 lg:grid-cols-3">
+        <div className="mt-16 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
           {sponsorTiers.map((t, i) => (
             <Reveal
               key={t.tier}
@@ -41,6 +41,11 @@ export default function Sponsors() {
                 className={`mt-2 text-sm font-medium ${t.featured ? "text-primary-dark/70" : "text-accent"}`}
               >
                 {t.amount}
+              </p>
+              <p
+                className={`mt-1 text-xs ${t.featured ? "text-primary-dark/60" : "text-white/50"}`}
+              >
+                Kuota {t.quota} slot
               </p>
               <ul className="mt-6 flex-1 space-y-3">
                 {t.features.map((f) => (

@@ -83,33 +83,45 @@ export const timeline = [
 
 export const sponsorTiers = [
   {
-    tier: "Mitra Utama",
-    amount: "Rp 1.000.000 – Rp 5.000.000",
+    tier: "Platinum",
+    amount: "Rp 70.000.000",
+    quota: 1,
     features: [
       "Logo pada hero & footer website",
-      "Ditampilkan di media kit & laporan KKN",
-      "Mention di seluruh konten dokumentasi",
-      "Piagam kerja sama",
+      "Logo di seluruh materi publikasi & dokumentasi",
+      "Ditampilkan di media kit & laporan akhir KKN",
+      "Piagam kerja sama & laporan pertanggungjawaban khusus",
     ],
     featured: true,
   },
   {
-    tier: "Mitra Kolaborasi",
-    amount: "Rp 500.000 – Rp 1.000.000",
+    tier: "Gold",
+    amount: "Rp 50.000.000",
+    quota: 1,
     features: [
-      "Logo di section paket sponsor",
+      "Logo pada section sponsor website",
+      "Penampilan di media kit & laporan KKN",
+      "Mention di seluruh konten dokumentasi",
+      "Piagam kerja sama",
+    ],
+    featured: false,
+  },
+  {
+    tier: "Silver",
+    amount: "Rp 30.000.000",
+    quota: 1,
+    features: [
+      "Logo pada section sponsor website",
       "Mention di konten program terkait",
       "Piagam kerja sama",
     ],
     featured: false,
   },
   {
-    tier: "Mitra Dukungan",
-    amount: "< Rp 500.000 / barang & jasa",
-    features: [
-      "Logo di galeri sponsor",
-      "Ucapan terima kasih & dokumentasi",
-    ],
+    tier: "Bronze",
+    amount: "Rp 20.000.000",
+    quota: 1,
+    features: ["Logo pada galeri sponsor", "Ucapan terima kasih & dokumentasi"],
     featured: false,
   },
 ];

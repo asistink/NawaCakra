@@ -9,7 +9,7 @@ export const site = {
   motto: "Menggerakkan pembaruan secara menyeluruh dan selaras melalui berbagai sektor",
   // TODO: isi kontak sebelum deploy
   contact: {
-    whatsapp: "+6281234567890",
+    whatsapp: "+62 877-8581-5846",
     instagram: "@nawacakra.ugm",
     email: "nawacakra.ugm@gmail.com",
   },

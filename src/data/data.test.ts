@@ -103,10 +103,15 @@ describe("Data konten desa & sponsor", () => {
     ]);
   });
 
-  it("paket sponsor memiliki 3 tier dengan tier utama ditandai featured", () => {
-    expect(sponsorTiers).toHaveLength(3);
+  it("paket sponsor memiliki 4 tier dengan tier utama ditandai featured", () => {
+    expect(sponsorTiers).toHaveLength(4);
     expect(sponsorTiers.filter((t) => t.featured)).toHaveLength(1);
-    expect(sponsorTiers[0].tier).toBe("Mitra Utama");
+    expect(sponsorTiers.map((t) => t.tier)).toEqual([
+      "Platinum",
+      "Gold",
+      "Silver",
+      "Bronze",
+    ]);
   });
 
   it("memiliki mapping 14 SDGs", () => {
