@@ -110,7 +110,7 @@ export default function Hero() {
           data-hero-fade
           className="mx-auto mt-6 max-w-2xl text-sm leading-relaxed text-white/70 sm:text-base"
         >
-          Kelompok {site.groupNumber} {site.university}. Membangun
+          Membangun
           <span className="text-accent"> Desa Kukuh</span> dan
           <span className="text-accent"> Desa Kerambitan</span> di Kabupaten Tabanan, Bali,
           menggerakkan pembaruan melalui sembilan sektor pemberdayaan desa.

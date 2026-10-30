@@ -24,11 +24,10 @@ describe("Navbar", () => {
 });
 
 describe("Hero", () => {
-  it("menampilkan nama tim, tagline, universitas, dan lokasi", () => {
+  it("menampilkan nama tim, tagline, dan lokasi", () => {
     render(<Hero />);
     expect(screen.getByRole("heading", { level: 1 })).toHaveTextContent(/nawa cakra/i);
     expect(screen.getByText(site.tagline)).toBeInTheDocument();
-    expect(screen.getByText(/universitas gadjah mada/i)).toBeInTheDocument();
     expect(screen.getByText(/kabupaten tabanan, bali/i)).toBeInTheDocument();
     expect(screen.getByText(/kkn ppm ugm periode ii 2027/i)).toBeInTheDocument();
   });

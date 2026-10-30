@@ -1,6 +1,5 @@
 export const site = {
   name: "Nawa Cakra",
-  groupNumber: "XX", // TODO: isi nomor kelompok
   university: "Universitas Gadjah Mada",
   program: "KKN PPM UGM Periode II 2027",
   locations: "Desa Kukuh (Kec. Marga) & Desa Kerambitan (Kec. Kerambitan)",
