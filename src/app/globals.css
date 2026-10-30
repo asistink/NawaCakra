@@ -1,26 +1,60 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Earth tone + emas — Nawa Cakra */
+  --background: #faf7f0;
+  --foreground: #1f2937;
+  --primary: #2d4a32;
+  --primary-dark: #1e2b22;
+  --accent: #c9a227;
+  --muted: #6b7280;
+  --bg-alt: #f0ebdd;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-primary: var(--primary);
+  --color-primary-dark: var(--primary-dark);
+  --color-accent: var(--accent);
+  --color-muted: var(--muted);
+  --color-bg-alt: var(--bg-alt);
+  --font-sans: var(--font-inter);
+  --font-display: var(--font-playfair);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+}
+
+/* Reveal-on-scroll default state (GSAP set final state via JS) */
+.js .reveal {
+  opacity: 0;
+  transform: translateY(24px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .js .reveal {
+    opacity: 1;
+    transform: none;
+  }
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+/* Subtle paper texture for sections */
+.texture-paper {
+  background-image: radial-gradient(
+      circle at 1px 1px,
+      rgba(45, 74, 50, 0.04) 1px,
+      transparent 0
+    );
+  background-size: 22px 22px;
 }
