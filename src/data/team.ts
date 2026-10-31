@@ -5,6 +5,7 @@ export interface TeamMember {
   role: string;
   cluster: ClusterKey;
   clusterLabel: string;
+  photo?: string;
 }
 
 export const clusters: Record<
@@ -19,25 +20,25 @@ export const clusters: Record<
 
 export const team: TeamMember[] = [
   // Saintek
-  { name: "Raka Fadlurrochman Faaiz", role: "Kormanit", cluster: "saintek", clusterLabel: "Saintek" },
-  { name: "Abdul Hamid Awaludin Ardiansyah", role: "Kormater Saintek", cluster: "saintek", clusterLabel: "Saintek" },
-  { name: "Gabriel Krisdanar Nugroho", role: "DDD", cluster: "saintek", clusterLabel: "Saintek" },
-  { name: "Ayudya Pramesti Langgeng Maharani", role: "DDD", cluster: "saintek", clusterLabel: "Saintek" },
+  { name: "Raka Fadhlurrochman Faaiz", role: "Kormanit", cluster: "saintek", clusterLabel: "Saintek", photo: "/assets/tim/raka-fadhlurrochman.jpg" },
+  { name: "Abdul Hamid Awaludin Ardiansyah", role: "Kormater Saintek", cluster: "saintek", clusterLabel: "Saintek", photo: "/assets/tim/abdul-hamid.jpg" },
+  { name: "Gabriel Krisdanar Nugroho", role: "DDD", cluster: "saintek", clusterLabel: "Saintek", photo: "/assets/tim/gabriel-krisdanar.jpg" },
+  { name: "Ayudya Pramesti Langgeng Maharani", role: "DDD", cluster: "saintek", clusterLabel: "Saintek", photo: "/assets/tim/ayudya-pramesti.jpg" },
   // Soshum
-  { name: "Sisna Bela Adelia Putri", role: "Kormater Soshum", cluster: "soshum", clusterLabel: "Soshum" },
-  { name: "Kadja Elyoenai Kale Lado", role: "Sponsorship", cluster: "soshum", clusterLabel: "Soshum" },
-  { name: "Muhammad Fawwaza", role: "Koor SHE", cluster: "soshum", clusterLabel: "Soshum" },
-  { name: "Jocasta Ravya Ismo", role: "Humas & Publikasi", cluster: "soshum", clusterLabel: "Soshum" },
-  { name: "Putu Angelina Devi Wahyuni", role: "Koor Acara", cluster: "soshum", clusterLabel: "Soshum" },
-  { name: "Tia Glory Basaria Purba", role: "Humas & Publikasi", cluster: "soshum", clusterLabel: "Soshum" },
+  { name: "Sisna Bela Adelia Putri", role: "Kormater Soshum", cluster: "soshum", clusterLabel: "Soshum", photo: "/assets/tim/sisna-bela.jpg" },
+  { name: "Kadja Elyoenai Kale Lado", role: "Sponsorship", cluster: "soshum", clusterLabel: "Soshum", photo: "/assets/tim/kadja-elyoenai.jpg" },
+  { name: "Muhammad Fawwaza", role: "Koor SHE", cluster: "soshum", clusterLabel: "Soshum", photo: "/assets/tim/muhammad-fawwaza.jpg" },
+  { name: "Jocasta Ravya Ismo", role: "Humas & Publikasi", cluster: "soshum", clusterLabel: "Soshum", photo: "/assets/tim/jocasta-ravya.jpg" },
+  { name: "Putu Angelina Devi Wahyuni", role: "Koor Acara", cluster: "soshum", clusterLabel: "Soshum", photo: "/assets/tim/putu-angelina.jpg" },
+  { name: "Tia Glory Basaria Purba", role: "Humas & Publikasi", cluster: "soshum", clusterLabel: "Soshum", photo: "/assets/tim/tia-glory.jpg" },
   // Medika
-  { name: "Argia Padmasari", role: "Sekretaris", cluster: "medika", clusterLabel: "Medika" },
-  { name: "Intan Candrani Abdi Negoro", role: "Kormasit", cluster: "medika", clusterLabel: "Medika" },
-  { name: "Zakki Muhammad Thabrani", role: "Kormater Medika", cluster: "medika", clusterLabel: "Medika" },
-  { name: "Kania Zafira Roxano", role: "Sponsorship", cluster: "medika", clusterLabel: "Medika" },
+  { name: "Argia Padmasari", role: "Sekretaris", cluster: "medika", clusterLabel: "Medika", photo: "/assets/tim/argia-padmasari.jpg" },
+  { name: "Intan Candrani Abdi Negoro", role: "Kormasit", cluster: "medika", clusterLabel: "Medika", photo: "/assets/tim/intan-candrani.jpg" },
+  { name: "Zakki Muhammad Thabrani", role: "Kormater Medika", cluster: "medika", clusterLabel: "Medika", photo: "/assets/tim/zakki-thabrani.jpg" },
+  { name: "Kania Zafira Roxano", role: "Sponsorship", cluster: "medika", clusterLabel: "Medika", photo: "/assets/tim/kania-zafira.jpg" },
   // Agro
-  { name: "I Gede Andeka", role: "Kormasit", cluster: "agro", clusterLabel: "Agro" },
-  { name: "Ilma Fatiha", role: "Kormater Agro", cluster: "agro", clusterLabel: "Agro" },
+  { name: "I Gede Andeka", role: "Kormasit", cluster: "agro", clusterLabel: "Agro", photo: "/assets/tim/i-gede-andeka.jpg" },
+  { name: "Ilma Fatiha", role: "Kormater Agro", cluster: "agro", clusterLabel: "Agro", photo: "/assets/tim/ilma-fatiha.jpg" },
 ];
 
 export const network = [

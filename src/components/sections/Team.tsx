@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Reveal from "@/components/Reveal";
 import { team, clusters, type ClusterKey } from "@/data/team";
 
@@ -51,9 +52,19 @@ export default function Team() {
                       key={m.name}
                       className="rounded-2xl border border-primary/10 bg-white p-6 text-center shadow-sm transition hover:-translate-y-1 hover:shadow-lg"
                     >
-                      <span className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-primary font-display text-lg font-bold text-accent">
-                        {initials(m.name)}
-                      </span>
+                      {m.photo ? (
+                        <Image
+                          src={m.photo}
+                          alt={`Foto ${m.name}`}
+                          width={64}
+                          height={64}
+                          className="mx-auto h-16 w-16 rounded-full object-cover"
+                        />
+                      ) : (
+                        <span className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-primary font-display text-lg font-bold text-accent">
+                          {initials(m.name)}
+                        </span>
+                      )}
                       <p className="mt-4 text-sm font-semibold leading-snug text-primary">
                         {m.name}
                       </p>
